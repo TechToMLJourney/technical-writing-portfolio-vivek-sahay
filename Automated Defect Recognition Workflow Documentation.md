@@ -6,7 +6,7 @@ This document explains the workflow of an Automated Defect Recognition (ADR) sys
 
 The ADR system automatically analyzes inspection images and detects defects using machine learning models. It helps reduce manual inspection effort and improves consistency in defect detection.
 
-The workflow described here is based on concepts used in inspection software such as the ADR system available in X|approver developed by :contentReference[oaicite:2]{index=2}.
+The workflow described here is based on concepts used in inspection software such as the ADR system available in X|approver developed by :Baker Hughes (General Electric Oil and Gas).
 
 ---
 

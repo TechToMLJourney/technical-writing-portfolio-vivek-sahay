@@ -11,6 +11,9 @@ The samples include:
 • Knowledge base articles
 • Product documentation
 
-Note: These documents are fictional samples created for demonstration
-purposes and do not contain confidential information from previous employers.
+Note and Disclaimer
+
+The documents in this repository are fictional sample materials created solely for demonstration and portfolio purposes. They do not contain any confidential, proprietary, or restricted information from any previous employer or organization.
+
+All examples have been developed using publicly available information and general industry knowledge. Any resemblance to real systems, products, or workflows is purely illustrative and intended only to demonstrate documentation and technical writing skills.
 

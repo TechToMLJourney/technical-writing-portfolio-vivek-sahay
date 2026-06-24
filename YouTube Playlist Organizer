@@ -1,0 +1,67 @@
+# YouTube Playlist Extractor 🚀
+
+A lightweight Python utility that connects to the official YouTube Data API v3 to fetch, paginate, and extract all video details (titles, URLs, and descriptions) from any public or unlisted YouTube playlist. 
+
+This project solves the "buried link" problem by allowing you to extract your carefully curated video playlists into a clean, searchable dataset instead of losing track of them in chat applications.
+
+## ✨ Features
+* **Full Pagination Support:** Automatically handles YouTube's 50-item-per-page limit to fetch playlists of any size.
+* **Metadata Extraction:** Captures video titles, direct watch links, and video descriptions.
+* **Developer-Friendly:** Written in clean, vanilla Python utilizing the official Google API Client.
+
+## 📋 Prerequisites
+
+Before running the script, you need a Google Cloud API Key and your target YouTube Playlist ID.
+
+### 1. Get a YouTube Data API Key
+1. Go to the [Google Cloud Console](https://google.com).
+2. Create a new project (or select an existing one).
+3. In the search bar, look up **YouTube Data API v3** and click **Enable**.
+4. Navigate to the **API & Services > Credentials** tab on the left sidebar.
+5. Click **+ Create Credentials** at the top and select **API Key**. Copy your generated key string.
+
+### 2. Locate Your Playlist ID
+1. Open your custom playlist in a web browser.
+2. Look at the URL address bar. Your Playlist ID is the long string of alphanumeric characters immediately following `list=`.
+   * *Example URL:* `https://youtube.com`
+   * *Your Playlist ID:* `PLbc0sBvczbDX3m0uohW-gBst0vSscR-1A`
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd YOUR_REPOSITORY_NAME
+   ```
+
+2. **Install the required dependencies:**
+   This project relies on the official Google API Python client wrapper.
+   ```bash
+   pip install google-api-python-client
+   ```
+
+## 🚀 Usage
+
+1. Open `extractor.py` (or whatever you named your script file).
+2. Replace the placeholder strings at the top of the file with your actual keys:
+   ```python
+   API_KEY = "YOUR_YOUTUBE_API_KEY_HERE"
+   PLAYLIST_ID = "YOUR_PLAYLIST_ID_HERE"
+   ```
+3. Run the script from your terminal:
+   ```bash
+   python extractor.py
+   ```
+
+## 💻 How the Code Works
+
+The core of the logic lies in a `while True` loop that aggressively polls the API. The script fetches 50 results at a time, parses out the payload, checks for the presence of a `nextPageToken` provided by Google's response metadata, and recursively calls the next page until the entire playlist payload is exhausted.
+
+## 🗺️ Roadmap & Next Steps
+* [ ] Add a module to export data into a searchable `.csv` file.
+* [ ] Integrate the `youtube-transcript-api` to pull text captions for semantic search capabilities.
+* [ ] Build a lightweight frontend UI or local terminal query tool.
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
+

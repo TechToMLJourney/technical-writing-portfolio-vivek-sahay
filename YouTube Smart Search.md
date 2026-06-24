@@ -21,6 +21,25 @@ However, once your collection grows, two major friction points emerge.
 
 ---
 
+## 🚀 Origin Story
+
+For a long time, I, **Vivek Sahay**, have relied heavily on YouTube playlists to organize learning material, engineering content, startup discussions, research videos, and technical tutorials.
+
+As those playlists grew into hundreds of videos, I realized that saving information was easy, but retrieving it later was surprisingly difficult.
+
+The same issues kept appearing:
+
+- Valuable videos getting buried under newer additions
+- Hours spent scrolling through playlists
+- Inability to search by ideas or spoken discussions
+- Friction when sharing saved content with others
+
+This project is my attempt to solve that problem by transforming YouTube playlists into a searchable knowledge system powered by metadata, transcripts, and semantic search.
+
+The vision is simple:
+
+**Save once. Search forever.**
+
 ### 🔄 Context Switching
 
 Sharing a saved video usually requires:
